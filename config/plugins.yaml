@@ -269,15 +269,14 @@
   on_cmd: FZF
   type__depth: 1
   hook_source: |-
-    let g:fzf_layout = { 'down': '~25%' }
-
-  build: cd ~/.fzf && ./install --all
+    let g:fzf_preview_window = ['right:70%', 'ctrl-p']
+  #let g:fzf_layout = {'down': '~25%'}
 
 - repo: junegunn/fzf.vim
   depends: fzf
   merged: 0
-  on_cmd: [ Files, GitFiles, Buffers, Lines, Locate, Colors, Ag, Rg, Tags ]
-  on_func: [ fzf#vim#with_preview, fzf#run, vista#finder#fzf#Run ]
+  on_cmd: [Files, History, GitFiles, Buffers, Lines, Locate, Colors, Ag, Rg, Tags]
+  on_func: [fzf#vim#with_preview, fzf#run, vista#finder#fzf#Run]
 
 - repo: Ron89/thesaurus_query.vim
   on_cmd:
@@ -705,5 +704,5 @@
   on_map: { ox: <Plug> }
 - repo: prettier/vim-prettier
   build: npm install
-  on_map: {ox: <Plug>}
+  on_map: { ox: <Plug> }
 #  vim: set ts=2 sw=2 tw=80 et :

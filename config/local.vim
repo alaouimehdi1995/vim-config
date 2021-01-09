@@ -14,8 +14,8 @@
 map 0 ^
 
 " Adding FZF shortcuts
-nnoremap <silent><LocalLeader>f :FZF<CR>
-nnoremap <silent><LocalLeader>d :FZF ~<CR>
+nnoremap <silent><LocalLeader>f :Files<CR>
+nnoremap <silent><LocalLeader>d :Files ~<CR>
 nnoremap <silent><LocalLeader>h :History<CR>
 
 " Adding tabs shortcuts

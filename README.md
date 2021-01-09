@@ -84,6 +84,7 @@ Best with [Neovim] 0.5.x or [Vim] 8.x and `python3` enabled.
 ## Prerequisites
 
 * Python 3 (`brew install python`)
+* bat (`https://github.com/sharkdp/bat#installation`)
 * Neovim or Vim (`brew install neovim` and/or `brew install vim`)
 
 *Caveat*: You must have **one** of these tools installed:
