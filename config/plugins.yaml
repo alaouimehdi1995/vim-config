@@ -21,6 +21,7 @@
       \  ],
       \ 'pattern': ['\.un~$']
       \ }
+- repo: ryanoasis/vim-devicons
 
 # Improve CursorHold performance
 # See: https://github.com/neovim/neovim/issues/12587
