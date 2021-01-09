@@ -271,6 +271,8 @@
   hook_source: |-
     let g:fzf_layout = { 'down': '~25%' }
 
+  build: cd ~/.fzf && ./install --all
+
 - repo: junegunn/fzf.vim
   depends: fzf
   merged: 0
@@ -695,5 +697,13 @@
 - repo: kana/vim-textobj-function
   on_map: { ox: <Plug> }
   hook_add: let g:textobj_function_no_default_key_mappings = 1
-
+  #
+# ==========================================
+# Custom plugins (WIP)
+# ------------
+- repo: ambv/black
+  on_map: { ox: <Plug> }
+- repo: prettier/vim-prettier
+  build: npm install
+  on_map: {ox: <Plug>}
 #  vim: set ts=2 sw=2 tw=80 et :
