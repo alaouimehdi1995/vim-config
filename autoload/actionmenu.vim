@@ -51,13 +51,13 @@ function! actionmenu#open(items, callback, ...) abort
 		\}
 
 	let s:window = nvim_open_win(s:buffer, 1, l:opts)
-	call nvim_win_set_option(s:window, 'foldenable', v:false)
-	call nvim_win_set_option(s:window, 'wrap', v:false)
-	call nvim_win_set_option(s:window, 'statusline', '')
-	call nvim_win_set_option(s:window, 'sidescrolloff', 0)
-	call nvim_win_set_option(s:window, 'listchars', '')
+	call nvim_set_option('foldenable', v:false)
+	call nvim_set_option('wrap', v:false)
+	call nvim_set_option('statusline', '')
+	call nvim_set_option('sidescrolloff', 0)
+	call nvim_set_option('listchars', '')
 	if exists('&winblend')
-		call nvim_win_set_option(s:window, 'winblend', 100)
+		call nvim_set_option('winblend', 100)
 	endif
 
 	" Setup the window
