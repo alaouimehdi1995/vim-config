@@ -20,7 +20,7 @@ function! s:open_diff()
 	call setwinvar(winnr(), 'diff_origin', l:bnr)
 	vertical new __diff
 	let l:diff_bnr = bufnr('%')
-	nnoremap <buffer><silent> q :quit<CR>
+	"nnoremap <buffer><silent> q :quit<CR>
 	setlocal buftype=nofile bufhidden=wipe
 	r ++edit #
 	0d_

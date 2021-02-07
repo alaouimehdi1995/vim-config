@@ -703,6 +703,7 @@
 - repo: ambv/black
   on_map: { ox: <Plug> }
 - repo: prettier/vim-prettier
-  build: npm install
+  build: yarn install
+  branch: "release/0.x"
   on_map: { ox: <Plug> }
 #  vim: set ts=2 sw=2 tw=80 et :

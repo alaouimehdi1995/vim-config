@@ -42,5 +42,6 @@ nnoremap <silent>tsv :VST<CR>
 
 " Adding Prettier linter for frontend files
 let g:prettier#autoformat = 0
-let g:prettier#config#parser = 'babylon'
+" to avoid "failed to parse buffer" error. See: https://github.com/prettier/vim-prettier/issues/268
+"let g:prettier#config#parser = 'babylon'
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync

@@ -49,7 +49,7 @@ else
 endif
 
 " Exit help window with 'q'
-nnoremap <silent><buffer> q :quit<CR>
+"nnoremap <silent><buffer> q :quit<CR>
 
 " Jump to links with enter
 nmap <buffer> <CR> <C-]>
